@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab Task 6</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .top-input {
+            display: block;
+            width: 180px;
+            padding: 6px;
+            margin-bottom: 6px;
+            border: 1px solid gray;
+        }
+
+        .survey-box {
+            margin-top: 10px;
+            padding: 10px;
+            background-color: #f3f3f3;
+            width: 430px;
+            border: none;
+        }
+
+        .survey-box p {
+            display: inline-block;
+            width: 300px;
+            vertical-align: middle;
+            font-size: 14px;
+        }
+
+        .survey-box button {
+            display: inline-block;
+            vertical-align: middle;
+            padding: 5px 10px;
+            border: 1px solid gray;
+            background-color: #e6e6e6;
+            cursor: pointer;
+        }
+
+        .google-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .google-logo {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+
+        .google-search {
+            display: block;
+            width: 500px;
+            padding: 10px;
+            margin: 15px auto;
+            border-radius: 20px;
+            border: 1px solid #dcdcdc;
+        }
+
+        .signup-container {
+            margin-top: 40px;
+            width: 320px;
+        }
+
+        .name-row {
+            display: flex;
+            justify-content: space-between;
+            gap: 4%;
+        }
+
+        .name-input {
+            width: 48%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .email-input {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            
+            box-sizing: border-box;
+        }
+
+        .signup-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 6px;
+            background: linear-gradient(to right, #4f8df5, #3b6eea);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .uber-container {
+            margin-top: 40px;
+            width: 350px;
+            padding: 15px;
+            background-color: #f5f5f5;
+        }
+
+        .uber-container h2 {
+            margin-top: 0;
+        }
+
+        .uber-container input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: none;
+            background-color: #e6e6e6;
+        }
+
+        .uber-btn {
+            display: inline-block;
+            width: 48%;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .request-btn {
+            background-color: black;
+            color: white;
+        }
+
+        .schedule-btn {
+            background-color: #d9d9d9;
+        }
+
+    </style>
+</head>
+<body>
+
+    <input type="text" class="top-input" placeholder="Name">
+    <input type="text" class="top-input" placeholder="Email">
+
+    <div class="survey-box">
+        <div style="display:flex; align-items:center; justify-content:space-between;">
+            <p>Thanks for chatting with our <br>customer support. Would you <br>like to take our quick survey?</p>
+            <div>
+                <button>Yes</button>
+                <button>No</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="google-section">
+        <img src="C:/Users/rando/Documents/LLTCRESUME/google.svg" class="google-logo">
+        <input type="text" class="google-search" placeholder="Search Google or type a URL">
+    </div>
+
+    <div class="signup-container">
+        <div class="name-row">
+            <input type="text" class="name-input" placeholder="First name">
+            <input type="text" class="name-input" placeholder="Last name">
+        </div>
+        <input type="text" class="email-input" placeholder="Email">
+        <button class="signup-btn">Sign Up</button>
+    </div>
+
+    <div class="uber-container">
+        <h2>Request a ride now</h2>
+        <input type="text" placeholder="Enter pickup location">
+        <input type="text" placeholder="Enter destination">
+        <button class="uber-btn request-btn">Request now</button>
+        <button class="uber-btn schedule-btn">Schedule for later</button>
+    </div>
+
+</body>
+</html>
+
+
+    

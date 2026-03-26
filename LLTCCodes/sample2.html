@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio - Lianne Cabrera</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #0f3d3e;
+    color: #f5f5f5;
+}
+
+/* LAYOUT */
+.container {
+    display: flex;
+    min-height: 100vh;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 300px;
+    background: rgba(19, 78, 74, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.sidebar img {
+    width: 110px;
+    height: 110px;
+    border-radius: 12px;
+    object-fit: cover;
+    border: 3px solid #ff8fab;
+    margin-bottom: 15px;
+}
+
+.sidebar h2 {
+    color: #ff8fab;
+}
+
+.sidebar p {
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.info p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+/* CONTENT */
+.content {
+    flex: 1;
+    padding: 40px;
+}
+
+/* CARDS */
+.card {
+    background: rgba(19, 78, 74, 0.7);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 14px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+.card h2 {
+    color: #ff8fab;
+    margin-bottom: 10px;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.box {
+    background: #1c6e6e;
+    padding: 12px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.box:hover {
+    background: #ff8fab;
+    transform: scale(1.05);
+}
+
+/* LIST */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <img src="profile.jpg" alt="Profile Photo">
+
+        <h2>Lianne Laine T. Cabrera</h2>
+        <p>IT Student</p>
+
+        <div class="info">
+            <p><i class="fas fa-map-marker-alt"></i> Magalang, Pampanga</p>
+            <p><i class="fas fa-envelope"></i> liacabrera6117@gmail.com</p>
+            <p><i class="fas fa-phone"></i> 0969-459-8053</p>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <div class="card">
+            <h2>Career Objective</h2>
+            <p>
+                A motivated student aiming to grow in the IT field and gain real experience.
+            </p>
+        </div>
+
+        <div class="card">
+            <h2>Skills</h2>
+            <div class="grid">
+                <div class="box">Graphic Design</div>
+                <div class="box">Digital Art</div>
+                <div class="box">Time Management</div>
+                <div class="box">Problem Solving</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Hobbies</h2>
+            <div class="grid">
+                <div class="box">Gaming</div>
+                <div class="box">Designing</div>
+                <div class="box">Music</div>
+                <div class="box">Movies</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Tech Stack</h2>
+            <div class="grid">
+                <div class="box"><i class="fab fa-python"></i> Python</div>
+                <div class="box"><i class="fab fa-java"></i> Java</div>
+                <div class="box"><i class="fab fa-html5"></i> HTML</div>
+                <div class="box"><i class="fas fa-paint-brush"></i> Design</div>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>Contact</h2>
+            <p><i class="fab fa-facebook"></i> Facebook</p>
+            <p><i class="fab fa-instagram"></i> Instagram</p>
+            <p><i class="fas fa-envelope"></i> Email</p>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
