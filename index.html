@@ -15,7 +15,6 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* BODY */
 body {
     background: #0f3d3e;
     color: #f5f5f5;
@@ -64,13 +63,13 @@ body {
     font-size: 14px;
 }
 
-/* CONTENT AREA */
+/* CONTENT */
 .content {
     flex: 1;
     padding: 40px;
 }
 
-/* CARD */
+/* CARDS */
 .card {
     background: rgba(19, 78, 74, 0.7);
     backdrop-filter: blur(10px);
@@ -90,16 +89,14 @@ body {
     margin-bottom: 10px;
 }
 
-/* GRID (FOR SKILLS, HOBBIES, TECH, PROJECTS) */
+/* GRID */
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
 }
 
-/* BOX STYLE */
-.box,
-.project-box {
+.box {
     background: #1c6e6e;
     padding: 12px;
     border-radius: 10px;
@@ -107,36 +104,32 @@ body {
     align-items: center;
     gap: 10px;
     transition: 0.3s;
-    font-size: 14px;
 }
 
-.box:hover,
-.project-box:hover {
+.box:hover {
     background: #ff8fab;
     transform: scale(1.05);
 }
 
-/* ICONS INSIDE BOXES */
-.box i,
-.project-box i {
-    color: #f5f5f5;
-    font-size: 16px;
+/* ICONS / IMAGES */
+.box img {
+    width: 22px;
+    height: 22px;
 }
 
-/* PROJECT LINK */
-.project-link {
-    color: #ff8fab;
-    font-weight: bold;
-    text-decoration: none;
-    transition: 0.3s;
+/* gaming logos inline */
+.game-logos {
+    display: flex;
+    gap: 8px;
+    margin-left: auto;
 }
 
-.project-link:hover {
-    text-decoration: underline;
-    letter-spacing: 1px;
+.game-logos img {
+    width: 22px;
+    height: 22px;
 }
 
-/* LIST (if needed) */
+/* LIST */
 ul {
     padding-left: 20px;
 }
@@ -169,7 +162,7 @@ li {
 
     <!-- SIDEBAR -->
     <div class="sidebar">
-        <img src="https://github.com/liacabreraa/WS101MT/tree/main/images\maw.png" alt="Profile Photo">
+        <img src="C:\Users\rando\Documents\LLTCCodes\nyaw.png" alt="Profile Photo">
 
         <h2>Lianne Laine T. Cabrera</h2>
         <p>IT Student</p>
@@ -202,43 +195,41 @@ li {
         </div>
 
         <div class="card">
-            <h2>Skills</h2>
+            <h2>Hobbies</h2>
             <div class="grid">
-                <div class="box">Graphic Design</div>
-                <div class="box">Digital Art</div>
-                <div class="box">Time Management</div>
-                <div class="box">Problem Solving</div>
+
+                <div class="box">
+                    <i class="fas fa-gamepad"></i> Gaming
+                    <div class="game-logos">
+                    </div>
+                </div>
+
+                <div class="box">
+                    <i class="fas fa-music"></i>Music
+                </div>
+
             </div>
         </div>
 
         <div class="card">
-            <h2>Hobbies</h2>
+            <h2>Skills</h2>
             <div class="grid">
-                <div class="box">Gaming</div>
-                <div class="box">Designing</div>
-                <div class="box">Music</div>
-                <div class="box">Movies</div>
+                <div class="box">Time Management</div>
+                <div class="box">Teamwork & Collaboration</div>
+                <div class="box">Adaptability</div>
+                <div class="box">Basic Problem-Solving</div>
             </div>
         </div>
 
         <div class="card">
             <h2>Tech Stack</h2>
             <div class="grid">
-                <div class="box"><i class="fab fa-python"></i> Python</div>
-                <div class="box"><i class="fab fa-java"></i> Java</div>
                 <div class="box"><i class="fab fa-html5"></i> HTML</div>
-                <div class="box"><i class="fas fa-paint-brush"></i> Design</div>
             </div>
         </div>
 
     <div class="card">
     <h2>Midterm Tasks</h2>
-
-    <a href="https://github.com/liacabreraa/WS101MT" 
-       target="_blank" 
-       class="project-link">
-        👉 View All Midterm Tasks (GitHub)
-    </a>
 
     <div class="grid" style="margin-top: 15px;">
         <div class="project-box"><i class="fas fa-file-alt"></i> Resume Writing</div>
@@ -274,3 +265,4 @@ li {
 
 </body>
 </html>
+
